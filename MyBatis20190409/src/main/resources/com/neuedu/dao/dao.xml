@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?><!--xml版本和约束-->
+<!--使用xml实现接口功能
+约束：mapper
+
+-->
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+根：mapper
+            属性：namespace：映射的dao的权限命名 ：
+            属性：resultTape
+
+-->
+<mapper namespace="com.neuedu.dao.Dao">
+    <select id="selectAll" resultType="com.neuedu.entity.Employees">
+        select * from employees
+
+    </select>
+
+</mapper>
